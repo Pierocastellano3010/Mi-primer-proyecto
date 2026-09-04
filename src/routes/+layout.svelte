@@ -30,4 +30,12 @@
 
 {@render children()}
 
-<footer>Este es mi pie de pagina</footer>
+<footer>
+<div>
+
+
+
+		
+</div>
+
+</footer>

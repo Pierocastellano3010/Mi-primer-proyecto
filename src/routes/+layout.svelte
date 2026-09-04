@@ -31,11 +31,5 @@
 {@render children()}
 
 <footer>
-<div>
-
-
-
-		
-</div>
-
+	<div></div>
 </footer>

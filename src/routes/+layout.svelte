@@ -22,14 +22,28 @@
 
 	<div>
 		<a href="/carrito">
-		<Icon icon="akar-icons:shopping-bag" />
+			<Icon icon="akar-icons:shopping-bag" />
 		</a>
-		
 	</div>
 </nav>
 
 {@render children()}
 
 <footer>
-	<div></div>
+	<div>
+		<p>Vinilos Clásicos</p>
+		<p>
+			Preservando el legado de la música mexicana y el rock clásico en su
+			formato mas puro.
+		</p>
+	</div>
+	<div>
+		<p>contacto</p>
+		<p>Calle de la Melodía 123, CDMX</p>
+		<p>+52 55 1234 5678</p>
+	</div>
+	<div>
+		<button><Icon icon="ant-design:share-alt-outlined" /></button>
+		<button><Icon icon="bx:world" /></button>
+	</div>
 </footer>

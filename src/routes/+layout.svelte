@@ -1,7 +1,7 @@
 <script lang="ts">
 	import "./layout.css";
 	import favicon from "$lib/assets/favicon.svg";
-
+	import Icon from "@iconify/svelte";
 	let { children } = $props();
 </script>
 
@@ -21,10 +21,10 @@
 	</div>
 
 	<div>
-		<span></span>
 		<a href="/carrito">
-			<span></span>
+		<Icon icon="akar-icons:shopping-bag" />
 		</a>
+		
 	</div>
 </nav>
 

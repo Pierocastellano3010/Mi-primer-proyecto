@@ -31,20 +31,20 @@
 
 {@render children()}
 
-<footer class="flex">
-	<div>
+<footer class="flex bg-amber-100 justify-between items-center rounded px-6 py-3">
+	<div class="flex-1">
 		<p>Vinilos Clásicos</p>
 		<p>
 			Preservando el legado de la música mexicana y el rock clásico en su
 			formato mas puro.
 		</p>
 	</div>
-	<div>
+	<div class="flex-1">
 		<p>contacto</p>
 		<p>Calle de la Melodía 123, CDMX</p>
 		<p>+52 55 1234 5678</p>
 	</div>
-	<div>
+	<div class="flex-1">
 		<button class="bg-amber-50"
 			><Icon icon="ant-design:share-alt-outlined" /></button
 		>

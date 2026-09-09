@@ -1,15 +1,18 @@
 <section>
-    <h1 class="font-bold p-1 justify-center">El Sonido de una Era</h1>
-    <p>
+<img src="" alt="">
+    <h1 class="font-bold p-1 text-center">El Sonido de una Era</h1>
+    <p class="text-center px-4 py-2">
         Sumérgete en el crujido analogico del rock latino y el folclore
         mexicano. curaduría de alta fidelidad para coleccionistas y amastes del
         vinilo
     </p>
-    <div>
-        <button>folk mexicano</button>
-        <button>rock clasico</button>
-        <button>Rock en Españól</button>
+    <div class="flex justify-center p-4 gap-4">
+        <button class="bg-amber-200 rounded px-3 py-0.5">folk mexicano</button>
+        <button class="bg-amber-200 rounded px-3 py-0.5">rock clasico</button>
+        <button class="bg-amber-200 rounded px-3 py-0.5">Rock en Españól</button>
     </div>
+
+    <h3 class="text-center font-bold p-1">Artistas Destacados</h3>
 
     <div class="items-center">
         <h2 class="font-bold p-1">Ed maverick</h2>

@@ -7,20 +7,22 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
-<nav>
-	<div>
-		<span></span>
+<nav class="flex justify-between items-center px-5 py-2">
+	<div class="flex bg-amber-200 rounded px-5 py-2 items-center">
+		<Icon icon="arcticons:vinyl" />
 		<p>Vinilos Clásicos</p>
 	</div>
 
-	<div>
+	<div class="bg-amber-200 rounded px-5 py-2">
 		<a href="/">Inicio</a>
 		<a href="/catalogo">Catálogo</a>
 		<a href="/categorias">Categorias</a>
 		<a href="/artistas">Artistas</a>
 	</div>
 
-	<div>
+	<div class="flex bg-amber-200 rounded px-5 py-2 items-center">
+		<Icon icon="el:usd" />
+		<p>Usd</p>
 		<a href="/carrito">
 			<Icon icon="akar-icons:shopping-bag" />
 		</a>
@@ -29,7 +31,7 @@
 
 {@render children()}
 
-<footer>
+<footer class="flex">
 	<div>
 		<p>Vinilos Clásicos</p>
 		<p>
@@ -43,7 +45,9 @@
 		<p>+52 55 1234 5678</p>
 	</div>
 	<div>
-		<button><Icon icon="ant-design:share-alt-outlined" /></button>
-		<button><Icon icon="bx:world" /></button>
+		<button class="bg-amber-50"
+			><Icon icon="ant-design:share-alt-outlined" /></button
+		>
+		<button class="bg-amber-50"><Icon icon="bx:world" /></button>
 	</div>
 </footer>

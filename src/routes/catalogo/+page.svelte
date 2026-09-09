@@ -7,8 +7,8 @@
     </p>
 </div>
 <div>
-<button>Todos</button>
-<button>Folk</button>
-<button>Rock clásico</button>
-<button>Artistas Destacados</button>
+    <button>Todos</button>
+    <button>Folk</button>
+    <button>Rock clásico</button>
+    <button>Artistas Destacados</button>
 </div>

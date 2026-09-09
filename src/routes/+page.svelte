@@ -1,5 +1,5 @@
 <section>
-<img src="" alt="">
+<img src="https://eldiario.com/wp-content/uploads/2025/04/tiendas-discos-de-vinilo.jpg" alt="">
     <h1 class="font-bold p-1 text-center">El Sonido de una Era</h1>
     <p class="text-center px-4 py-2">
         Sumérgete en el crujido analogico del rock latino y el folclore

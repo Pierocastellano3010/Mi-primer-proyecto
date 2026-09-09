@@ -7,20 +7,20 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
-<nav class="flex justify-between items-center px-5 py-2">
-	<div class="flex bg-amber-100 rounded px-5 py-2 items-center">
+<nav class="flex justify-between items-center px-5 py-2 bg-amber-100">
+	<div class="flex rounded px-5 py-2 items-center">
 		<Icon icon="arcticons:vinyl" />
 		<p>Vinilos Clásicos</p>
 	</div>
 
-	<div class="bg-amber-100 rounded px-5 py-2">
+	<div class=" rounded px-5 py-2">
 		<a href="/">Inicio</a>
 		<a href="/catalogo">Catálogo</a>
 		<a href="/categorias">Categorias</a>
 		<a href="/artistas">Artistas</a>
 	</div>
 
-	<div class="flex bg-amber-100 rounded px-5 py-2 items-center">
+	<div class="flex rounded px-5 py-2 items-center">
 		<Icon icon="el:usd" />
 		<p>Usd</p>
 		<a href="/carrito">

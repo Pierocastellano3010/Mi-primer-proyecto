@@ -4,7 +4,7 @@
 
 <div>
     <div>
-        <img src={img} alt="" />
+        <img src={ img } alt="" />
         <p>{ name }</p>
     </div>
     <div>

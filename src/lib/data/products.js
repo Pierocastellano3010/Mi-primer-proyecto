@@ -1,4 +1,4 @@
-const products = [
+export const products = [
     {
         image: "https://images.genius.com/6f171c0ac5505f3fc10cef13c9596cf6.1000x1000x1.png",
         name: "Eduardo",

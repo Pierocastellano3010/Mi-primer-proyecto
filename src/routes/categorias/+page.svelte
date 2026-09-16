@@ -1,5 +1,5 @@
 <script>
-    import Productcard4 from "$lib/components/productcard4.svelte";
+    import Productcard from "$lib/components/productcard.svelte";
     import Icon from "@iconify/svelte";
 </script>
 
@@ -15,23 +15,6 @@
 
 <section>
 <div>
-<Productcard4 
-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnxLePrGx6GtYuGPvlbPjKmuMjYGCY0Peg0B2hgVFzJV6886Bh6JE9Hqc&s=10" 
-name="Folk" 
-des="Raices y Evolucion"/>
-<Productcard4 
-img="" 
-name="Rock En español" 
-des=""/>
-<Productcard4 
-img="" 
-name="" 
-des=""/>
-<Productcard4 
-img="" 
-name="" 
-des=""/>
-
 </div>
 
 </section>

@@ -1,3 +1,8 @@
+<script>
+    import Productcard from "$lib/components/productcard.svelte";
+    import Productcard2 from "$lib/components/productcard2.svelte";
+</script>
+
 <section
     class="flex flex-col items-center py-60 relative gap-7 bg-neutral-800/50"
 >
@@ -34,18 +39,53 @@
 </section>
 
 <section>
-    <div class="items-center"></div>
-    <div
-        class="items-center
-    "
-    >
-        <h3 class="font-bold p-1">Enanitos Verdes</h3>
-        <p>
-            Leyendas indiscutibles del rock en español. Redescubre los himnos de
-            toda una generacion con la calidez inigualable que solo el formato
-            analógico puede ofrecer.
-        </p>
-        <button class="text-amber-400">Explorar Colección</button>
+    <div class=" grid grid-cols-2 gap-3 px-10">
+        <Productcard
+            img="https://images.genius.com/6f171c0ac5505f3fc10cef13c9596cf6.1000x1000x1.png"
+            name="Ed Maverick"
+            des="El joven cantautor chihuahuense que redefinió la melancolía del
+folk contemporáneo mexicano. Sus prensajes en vinilo capturan la cruda intimidad de su voz."
+        />
+
+        <Productcard
+            img="https://i.scdn.co/image/ab67616d0000b273ea4f189d5bc56b9d3ca61cd8"
+            name="Enanitos Verdes"
+            des="Leyendas indiscutibles del rock en español. Redescubre los himnos
+de toda una generación con la calidez inigualable que solo el formato analógico puede ofrecer."
+        />
     </div>
 </section>
 
+<section>
+    <h2 class="flex text-3xl font-bold px-10 font-fan">Archivo Analogico</h2>
+
+    <div class="grid grid-cols-4 gap-4 px-10">
+        <Productcard2
+            img="https://images.genius.com/6f171c0ac5505f3fc10cef13c9596cf6.1000x1000x1.png"
+            name="Eduardo"
+            des="Ed maverick"
+            price="$45"
+        />
+
+        <Productcard2
+            img="https://i.scdn.co/image/ab67616d0000b2733557d645f5931f2053d73a64"
+            name="Lamento Boliviano"
+            des="Enanitos verdes"
+            price="$40"
+        />
+
+        <Productcard2
+            img="https://m.media-amazon.com/images/I/61+tn4NBv9L._UF894,1000_QL80_.jpg"
+            name="Hasta la raiz"
+            des="Natalia Lafourcade"
+            price="$50"
+        />
+
+        <Productcard2
+            img="https://cdn-images.dzcdn.net/images/cover/aadeeaaa9e2b7d14d71c5815e06747d8/0x1900-000000-80-0-0.jpg"
+            name="Caramelos de Cianuro"
+            des="Caramelos de Cianuro"
+            price="$40"
+        />
+    </div>
+</section>

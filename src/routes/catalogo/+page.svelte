@@ -27,6 +27,7 @@
                 name={product.name}
                 des={product.des}
                 price={product.price}
+                slug={product.slug}
             />
         {/each}
     </div>

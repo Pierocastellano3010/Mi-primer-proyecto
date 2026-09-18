@@ -12,7 +12,9 @@
     </p>
 </div>
 <div class="flex justify-start p-5 gap-5 px-10">
+   <a href="categorias">
     <button class="bg-amber-100 rounded px-2 py.0.6">Todos</button>
+   </a>
     <button class=" bg-amber-100 rounded px-2 py.0.6">Folk</button>
     <button class="bg-amber-100 rounded px-2 py.0.6">Rock clásico</button>
     <button class="bg-amber-100 rounded px-2 py.0.6">Artistas Destacados</button

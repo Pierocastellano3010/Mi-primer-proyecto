@@ -45,7 +45,7 @@
             name="Ed Maverick"
             slug="ed-maverick"
             des="El joven cantautor chihuahuense que redefinió la melancolía del folk contemporáneo mexicano. Sus prensajes en vinilo capturan la cruda intimidad de su voz."
-            price={undefined}
+            
         />
 
         <Imagencard
@@ -53,7 +53,7 @@
             name="Enanitos Verdes"
             slug="enanitos-verdes"
             des="Leyendas indiscutibles del rock en español. Redescubre los himnos de toda una generación con la calidez inigualable que solo el formato analógico puede ofrecer."
-            price={undefined}
+
         />
     </div>
 </section>

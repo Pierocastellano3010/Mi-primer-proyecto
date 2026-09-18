@@ -2,7 +2,7 @@
     const { img, name, des, price, slug } = $props();
 </script>
 
-<a href={"/projects/" + slug}>
+<a href={"/categorias/" + slug}>
     <div>
         <div>
             <img src={img} alt="" />

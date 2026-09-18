@@ -2,7 +2,8 @@
     const { img, name, des, price, slug } = $props();
 </script>
 
-<a href={"/projects/" + slug}>
+<a href={"/catalogo/" + slug}>
+ 
     <div>
         <div>
             <img src={img} alt="" />
@@ -20,8 +21,9 @@
             {/if}
 
             <div>
-                <button>Explorar Colección</button>
+                <button>Añadir</button>
             </div>
         </div>
+
     </div>
 </a>

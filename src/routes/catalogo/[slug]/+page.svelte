@@ -10,10 +10,11 @@
 
 {#if miproducto}
 
-<h1 class="text-2xl font-bold">{miproducto.name}</h1>
+<h1 class="text-2xl font-bold grid- gap-4 px-10">{miproducto.name}</h1>
 
-<div>
-<p>{miproducto.image}</p>
+<div class="flex text-2xl grid grid-cols-4 gap-4 px-10">
+<img src={miproducto.image} alt="">
 <p>{miproducto.des}</p>
+<p>{miproducto.price}</p>
 </div>
 {/if}

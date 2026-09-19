@@ -1,8 +1,14 @@
 <script>
+    import { products } from "$lib/data/products";
+
+    const missolotresproyectos = products.filter(
+        (products, index) => index < 3,
+    );
+
     import Imagencard from "$lib/components/imagencard.svelte";
     import Productcard from "$lib/components/productcard.svelte";
-    import { products } from "$lib/data/products";
 </script>
+
 <section
     class="flex flex-col items-center py-60 relative gap-7 bg-neutral-800/50"
 >
@@ -45,7 +51,6 @@
             name="Ed Maverick"
             slug="ed-maverick"
             des="El joven cantautor chihuahuense que redefinió la melancolía del folk contemporáneo mexicano. Sus prensajes en vinilo capturan la cruda intimidad de su voz."
-            
         />
 
         <Imagencard
@@ -53,7 +58,6 @@
             name="Enanitos Verdes"
             slug="enanitos-verdes"
             des="Leyendas indiscutibles del rock en español. Redescubre los himnos de toda una generación con la calidez inigualable que solo el formato analógico puede ofrecer."
-
         />
     </div>
 </section>
@@ -61,8 +65,19 @@
 <section>
     <h2 class="flex text-3xl font-bold px-10 font-fan">Archivo Analogico</h2>
 
-    <div class="grid grid-cols-4 gap-4 px-10">
-
-       
-</div>
+    <div class="grid grid-cols-4 gap-4 px-10"></div>
 </section>
+<div class=" text-2xl grid grid-cols-4 gap-4 px-10">
+    {#each missolotresproyectos as producto}
+    <div>
+        <p>
+            {producto.name}
+        </p>
+        <img src={producto.image} alt="" />
+        <p>
+            {producto.des}
+        </p>
+
+    </div>
+    {/each}
+</div>

@@ -20,5 +20,26 @@ export const categorys = [{
     des: "Poético y nostálgico (enfocado en la memoria)",
     price: "undefined",
 
-},
+}, {
+    image: "https://m.media-amazon.com/images/I/61pGM23MbLL._UF894,1000_QL80_.jpg",
+    name: "Hip Hop",
+    slug: "hio-hop",
+    des: "El sonido clásico de Nueva York. Cajas secas, bombos profundos y letras crudas.",
+    price: "undefined",
+
+}, {
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYsC96wqDNi2Iu4rKQIQIA-9q6dgDX08cuZua2Lhtubwt4L-7JlRhDk-dF&s=10",
+    name: "Pop",
+    slug: "pop",
+    des: "Música popular con melodías fáciles y letras comerciale",
+    price: "undefined",
+
+}, {
+    image: "https://i.ebayimg.com/images/g/Lj0AAeSwRQxqbTDC/s-l1200.webp",
+    name: "R&B contemporáneo",
+    slug: "r&b-contemporáneo",
+    des: "El groove del soul y el ritmo del hip-hop, unidos en la calidez de un vinilo.",
+    price: "undefined",
+
+}, 
 ]

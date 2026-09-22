@@ -5,9 +5,9 @@
 </script>
 
 <div class=" flex justify-between px-10">
-    <h1 class="w-full h-8 text-2xl">Archivos Sonoros</h1>
+    <h1 class="w-full h-8 text-3xl">Archivos Sonoros</h1>
 
-    <p>Exploracion Taxonomica De Nuestras Colecciones</p>
+    <p class="font-bold">Exploracion Taxonomica De Nuestras Colecciones</p>
 </div>
 <div class="flex items-center gap-2 px-10 text-2xl">
     <Icon icon="akar-icons:fire" />

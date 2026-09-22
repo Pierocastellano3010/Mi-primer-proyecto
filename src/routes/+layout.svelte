@@ -8,7 +8,7 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
-<nav class="flex justify-between items-center px-5 py-2 bg-amber-50">
+<nav class="flex justify-between items-center px-5 py-2 bg-yellow-50">
 	<div class="flex rounded px-5 py-2 items-center">
 		<Icon icon="arcticons:vinyl" />
 		<p>Vinilos Clásicos</p>

@@ -1,35 +1,37 @@
 <script>
+// @ts-nocheck
+
     import Categorycard from "$lib/components/categorycard.svelte";
     import { categorys } from "$lib/data/categorys";
     import Icon from "@iconify/svelte";
 </script>
 
-<div class=" flex justify-between px-10">
-    <h1 class="w-full h-8 text-3xl">Archivos Sonoros</h1>
+<div class="px-10 py-6">
+  <!-- Cabecera -->
+  <div class="flex justify-between items-start mb-6">
+    <h1 class="w-full text-3xl font-bold">Archivos Sonoros</h1>
+    <p class="font-bold text-sm text-gray-500 uppercase tracking-wider text-right shrink-0">
+      Exploración Taxonómica De Nuestras Colecciones
+    </p>
+  </div>
 
-    <p class="font-bold">Exploracion Taxonomica De Nuestras Colecciones</p>
-</div>
-<div class="flex items-center gap-2 px-10 text-2xl">
+  <div class="flex items-center gap-2 mb-6 text-xl font-bold">
     <Icon icon="akar-icons:fire" />
-    <p class="flex flex-col gap-8">Vanguardia Sonora</p>
-</div>
+    <p>Vanguardia Sonora</p>
+  </div>
 
-<section>
-<div>
-</div>
 
-</section>
-
-<section>
-    <div class="grid grid-cols-3 gap-4 px-10">
-        {#each categorys as product}
-            <Categorycard
-                img={product.image}
-                name={product.name}
-                des={product.des}
-                price={product.price}
-                slug={product.slug}
-            />
-        {/each}
+  <section>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {#each categorys as product}
+        <Categorycard 
+          img={product.image || product.img}
+          name={product.name}
+          des={product.des}
+          slug={product.slug}
+          tag={product.tag || "TENDENCIA"}
+        />
+      {/each}
     </div>
-</section>
+  </section>
+</div>

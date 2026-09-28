@@ -1,6 +1,6 @@
 <script>
     import { products } from "$lib/data/products";
-
+    const { img, name, slug, des } = $props();
     const missolotresproyectos = products.filter(
         (products, index) => index < 3,
     );
@@ -10,42 +10,64 @@
 </script>
 
 <section
-    class="flex flex-col items-center py-60 relative gap-7 bg-neutral-800/50"
+    class="relative flex flex-col items-center justify-center py-40 gap-6 px-4 text-center overflow-hidden"
 >
     <img
         src="https://eldiario.com/wp-content/uploads/2025/04/tiendas-discos-de-vinilo.jpg"
-        class="absolute top-0 left-0 -z-10 w-full h-full object-cover"
-        alt=""
+        class="absolute top-0 left-0 -z-20 w-full h-full object-cover"
+        alt="Tienda de vinilos"
     />
-    <h1 class="font-bold p-1 text-center text-5xl text-amber-50">
+
+    <div class="absolute top-0 left-0 -z-10 w-full h-full bg-black/60"></div>
+
+    <h1 class="text-4xl md:text-5xl font-bold p-1 text-amber-50 drop-shadow-md">
         El Sonido de una Era
     </h1>
-    <p class="text-center px-4 py-2 text-amber-50 font-bold">
-        Sumérgete en el crujido analogico del rock latino y el folclore
-        mexicano. curaduría de alta fidelidad para coleccionistas y amantes del
-        vinilo
+
+    <p
+        class="max-w-2xl text-center px-4 py-2 text-amber-50 font-normal leading-relaxed text-sm md:text-base opacity-90"
+    >
+        Sumérgete en el crujido analógico del rock latino y el folclore
+        mexicano. Curaduría de alta fidelidad para coleccionistas y amantes del
+        vinilo.
     </p>
-    <div class="flex justify-center p-4 gap-4">
-        <button class="bg-amber-100 rounded px-3 py-0.5 text-amber-950"
-            >folk mexicano</button
+
+    <div class="flex flex-wrap gap-4 justify-center items-center">
+        <a
+            href="/categorias"
+            class="px-6 py-3 bg-[#fbebe6] hover:bg-[#f8ded6] text-stone-900 font-bold text-xs uppercase tracking-widest rounded-full transition no-underline inline-block text-center"
         >
-        <button class="bg-amber-100 rounded px-3 py-0.5 text-amber-950"
-            >rock clasico</button
+            Folk Mexicano
+        </a>
+
+        <a
+            href="/categorias"
+            class="px-6 py-3 bg-[#fbebe6] hover:bg-[#f8ded6] text-stone-900 font-bold text-xs uppercase tracking-widest rounded-full transition no-underline inline-block text-center"
         >
-        <button class="bg-amber-100 rounded px-3 py-0.5 text-amber-950"
-            >Rock en Españól</button
+            Rock Clásico
+        </a>
+
+        <a
+            href="/categorias"
+            class="px-6 py-3 bg-[#fbebe6] hover:bg-[#f8ded6] text-stone-900 font-bold text-xs uppercase tracking-widest rounded-full transition no-underline inline-block text-center"
         >
+            Rock en Español
+        </a>
     </div>
 
-    <h3
-        class="text-center font-bold p-1 text-3xl rounded-2xl bg-amber-50 px-5 py-2"
-    >
-        Artistas Destacados
-    </h3>
+    <div class="w-full max-w-4xl flex items-center justify-center gap-4 mt-6">
+        <div class="h-[1px] bg-amber-100/40 flex-1"></div>
+        <h2
+            class="text-center font-bold text-lg md:text-xl rounded-2xl bg-amber-50 text-neutral-900 px-6 py-2 shadow-lg"
+        >
+            Artistas Destacados
+        </h2>
+        <div class="h-[1px] bg-amber-100/40 flex-1"></div>
+    </div>
 </section>
 
 <section>
-    <div class=" grid grid-cols-2 gap-3 px-10">
+    <div class=" grid grid-cols-1 md:grid-cols-2 gap-8 px-10">
         <Imagencard
             img="https://images.genius.com/6f171c0ac5505f3fc10cef13c9596cf6.1000x1000x1.png"
             name="Ed Maverick"
@@ -63,21 +85,19 @@
 </section>
 
 <section>
-    <h2 class="flex text-3xl font-bold px-10 font-fan">Archivo Analogico</h2>
+    <h2 class="flex text-3xl font-bold px-10 font-fam">Archivo Analogico</h2>
 
-    <div class="grid grid-cols-4 gap-4 px-10"></div>
-</section>
-<div class=" text-2xl grid grid-cols-4 gap-4 px-10">
-    {#each missolotresproyectos as producto}
-    <div>
-        <p>
-            {producto.name}
-        </p>
-        <img src={producto.image} alt="" />
-        <p>
-            {producto.des}
-        </p>
-
+    <div
+        class="grid grid-[#grid-cols-4] grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 px-10 py-6"
+    >
+        {#each missolotresproyectos as producto}
+            <Productcard
+                img={producto.image}
+                name={producto.name}
+                des={producto.des}
+                price={producto.price}
+                slug={producto.slug}
+            />
+        {/each}
     </div>
-    {/each}
-</div>
+</section>

@@ -53,7 +53,7 @@
 
     <div class="text-xs text-stone-700 text-center md:text-right">
       <p class="font-bold uppercase text-[10px] text-stone-500 tracking-wider">Contacto</p>
-      <p class="mt-0.5">contacto@vinilosclasicos.com • +52 55 1234 5678</p>
+      <p class="mt-0.5">juandiegocastellanoperez2004@gmail.com • +58 4121961181</p>
     </div>
   </div>
 

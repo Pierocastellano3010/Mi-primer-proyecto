@@ -52,7 +52,7 @@ slug: "joji"
     },
   ];
 
-  import Artistcard from "$lib/components/Artistcard.svelte";
+  import Artistcard from "$lib/components/artistcard.svelte";
     import { imagen } from "$lib/data/imagen";
 </script>
 

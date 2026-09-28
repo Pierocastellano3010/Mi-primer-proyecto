@@ -10,7 +10,7 @@
       alt={name} 
       class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
     />
-    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
+    <div class="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
     
 
     <span class="absolute top-3 left-3 bg-black/70 backdrop-blur-md text-amber-100 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">

@@ -3,7 +3,7 @@
 </script>
 
 <a href={`/categorias/${slug}`} class="block group no-underline text-white">
-  <div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-gray-900 shadow-md">
+  <div class="relative w-full aspect-4/3 rounded-lg overflow-hidden bg-gray-900 shadow-md">
     <!-- Imagen de fondo -->
     <img 
       src={img} 
@@ -12,7 +12,7 @@
     />
     
     <!-- Sombra gradiente para que se lea el texto -->
-    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+    <div class="absolute inset-0 bg-linear-to-t from-black/90 via-black/30 to-transparent"></div>
 
     <!-- Texto superpuesto -->
     <div class="absolute inset-0 p-5 flex flex-col justify-between">

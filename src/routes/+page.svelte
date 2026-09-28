@@ -56,13 +56,13 @@
     </div>
 
     <div class="w-full max-w-4xl flex items-center justify-center gap-4 mt-6">
-        <div class="h-[1px] bg-amber-100/40 flex-1"></div>
+        <div class="h-px bg-amber-100/40 flex-1"></div>
         <h2
             class="text-center font-bold text-lg md:text-xl rounded-2xl bg-amber-50 text-neutral-900 px-6 py-2 shadow-lg"
         >
             Artistas Destacados
         </h2>
-        <div class="h-[1px] bg-amber-100/40 flex-1"></div>
+        <div class="h-px bg-amber-100/40 flex-1"></div>
     </div>
 </section>
 

@@ -12,7 +12,7 @@
       class="w-full h-full object-cover block"
     />
     
-    <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex items-end p-6">
+    <div class="absolute inset-0 bg-linear-to-t from-black/85 via-black/20 to-transparent flex items-end p-6">
       <h3 class="text-3xl md:text-4xl font-bold text-white tracking-tight m-0">
         {name}
       </h3>

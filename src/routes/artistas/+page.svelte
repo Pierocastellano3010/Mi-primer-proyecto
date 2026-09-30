@@ -70,7 +70,7 @@
         },
     ];
 
-    import Artistcard from "$lib/components/artistcard.svelte";
+    import Artistcard from "$lib/components/Artistcard.svelte";
     import { imagen } from "$lib/data/imagen";
 </script>
 

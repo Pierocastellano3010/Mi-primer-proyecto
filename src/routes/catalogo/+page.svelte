@@ -1,14 +1,13 @@
 <script>
-    import Productcard from "$lib/components/productcard.svelte";
-    import { products } from "$lib/data/products";
+  import Productcard from "$lib/components/productcard.svelte";
+  import { products } from "$lib/data/products";
 </script>
 
 <div>
   <h1 class="font-bold p-4 text-3xl px-10">Catálogo Sonoro</h1>
   <p class="px-10">
     Explora nuestra cuidada selección de vinilos de primera edición. Sonido
-    analógico restaurado que rinde homenaje a las leyendas del rock y
-    folclor.
+    analógico restaurado que rinde homenaje a las leyendas del rock y folclor.
   </p>
 </div>
 
@@ -17,15 +16,21 @@
     Todos
   </button>
 
-  <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-1.5 rounded text-sm font-medium transition">
+  <button
+    class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-1.5 rounded text-sm font-medium transition"
+  >
     Folk
   </button>
 
-  <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-1.5 rounded text-sm font-medium transition">
+  <button
+    class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-1.5 rounded text-sm font-medium transition"
+  >
     Rock clásico
   </button>
 
-  <button class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-1.5 rounded text-sm font-medium transition">
+  <button
+    class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-1.5 rounded text-sm font-medium transition"
+  >
     Artistas Destacados
   </button>
 </div>
@@ -33,12 +38,15 @@
 <section>
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-10">
     {#each products as product}
-      <Productcard 
-        img={product.image}
-        name={product.name}
-        des={product.des}
-        price={product.price}
-        slug={product.slug}
+      <Productcard
+        producto={{
+          id: product.slug,
+          slug: product.slug,
+          imagen: product.image,
+          titulo: product.name,
+          artista: product.des,
+          precio: product.price,
+        }}
       />
     {/each}
   </div>

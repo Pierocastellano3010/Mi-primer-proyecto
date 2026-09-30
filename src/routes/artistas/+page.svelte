@@ -1,58 +1,76 @@
 <script>
-  // Lista de artistas icónicos de Rock en Español y Folk
-  const artistas = [
-    {
-      name: "Ed Maverick",
-      genre: "Folk Mexicano",
-      image: "https://statics.uniradioinforma.com/2023/11/655a6c7431205.jpeg",
-      albumsCount: 2,
-      slug: "ed-maverick"
-    },
-    {
-      name: "Enanitos Verdes",
-      genre: "Rock en Español",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd7lCPJbnWHxSHxn-oN7ZQGsivPRm1fZgycqJWESZ8XVzItJR6rgLO09g&s=10",
-      albumsCount: 3,
-      slug: "enanitos-verdes"
-    },
-    {
-      name: "Natalia Lafourcade",
-      genre: "Folk / Bolero",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwyHIgRf6YzJBYgH4_AQfLyyEOIjmc8ngw795I0-0xiwFtC6_5Ap-pkXOV&s=10",
-      albumsCount: 4,
-      slug: "natalia-lafourcade"
-    },
-    {
-      name: "Caramelos de Cianuro",
-      genre: "Rock Alt / Punk",
-      image: "https://i1.sndcdn.com/artworks-000095451842-bn4fm5-t500x500.jpg",
-      albumsCount: 2,
-      slug: "caramelos-de-cianuro"
-    },
-    {
-      name: "Soda Stereo",
-      genre: "Rock Clásico",
-      image: "https://cdn-images.dzcdn.net/images/cover/3157b5d381dd7f5f9be38e6629014725/0x1900-000000-80-0-0.jpg",
-      albumsCount: 5,
-      slug: "soda-stereo"
-    },
-    {
-      name: "Zoé",
-      genre: "Rock Psicodélico",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrj9l4BGdl4UkN_-WntPqX9WC9vtsUTb9MpeumEslHXXYP9sBrNCkdQtLP&s=10",
-      albumsCount: 3,
-      slug: "zoe"
-    },
+    // Lista de artistas icónicos de Rock en Español y Folk
+    const artistas = [
         {
-name: "Joji",
-genre: "R&B alternativo",
-image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPu9BT30i0OHDLprFBS4Jcbddk1UK9LSxFkqBD7Q00HpAOrf_RTHzEvKe9&s=10",
-albumsCount: 2,
-slug: "joji"
-    },
-  ];
+            name: "Ed Maverick",
+            genre: "Folk Mexicano",
+            image: "https://statics.uniradioinforma.com/2023/11/655a6c7431205.jpeg",
+            albumsCount: 3,
+            slug: "ed-maverick",
+        },
+        {
+            name: "Enanitos Verdes",
+            genre: "Rock en Español",
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd7lCPJbnWHxSHxn-oN7ZQGsivPRm1fZgycqJWESZ8XVzItJR6rgLO09g&s=10",
+            albumsCount: 1,
+            slug: "enanitos-verdes",
+        },
+        {
+            name: "Natalia Lafourcade",
+            genre: "Folk / Bolero",
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwyHIgRf6YzJBYgH4_AQfLyyEOIjmc8ngw795I0-0xiwFtC6_5Ap-pkXOV&s=10",
+            albumsCount: 1,
+            slug: "natalia-lafourcade",
+        },
+        {
+            name: "Caramelos de Cianuro",
+            genre: "Rock Alt / Punk",
+            image: "https://i1.sndcdn.com/artworks-000095451842-bn4fm5-t500x500.jpg",
+            albumsCount: 1,
+            slug: "caramelos-de-cianuro",
+        },
+        {
+            name: "Soda Stereo",
+            genre: "Rock Clásico",
+            image: "https://cdn-images.dzcdn.net/images/cover/3157b5d381dd7f5f9be38e6629014725/0x1900-000000-80-0-0.jpg",
+            albumsCount: 1,
+            slug: "soda-stereo",
+        },
+        {
+            name: "Zoé",
+            genre: "Rock Psicodélico",
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrj9l4BGdl4UkN_-WntPqX9WC9vtsUTb9MpeumEslHXXYP9sBrNCkdQtLP&s=10",
+            albumsCount: 1,
+            slug: "zoe",
+        },
+        {
+            name: "Joji",
+            genre: "R&B alternativo",
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPu9BT30i0OHDLprFBS4Jcbddk1UK9LSxFkqBD7Q00HpAOrf_RTHzEvKe9&s=10",
+            albumsCount: 3,
+            slug: "joji",
+        },{
+            name: "Mac Demarco",
+            genre: "indie rock",
+            image: "https://i.scdn.co/image/ab6761610000e5ebc9aca5b6d4c528caf75e8a1d",
+            albumsCount: 2,
+            slug: "mac-demarco",
+        },{
+            name: "Mon Laferte",
+            genre: "pop alternativo",
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQibclaO3SUs5ZCM6QinG9ajvdhczeXezgz97pdnBS7-nmhnKGV-OlZnwx_&s=10",
+            albumsCount: 2,
+            slug: "mon-laferte",
+        },{
+            name: "Kevin Kaarl",
+            genre: "Folk",
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4e--QH3v45bS9y5SkMLqKCP3ygmEhT9_JQA2y7JFXLEXcQxDB2NL8MCM&s=10",
+            albumsCount: 2,
+            slug: "kevin-kaarl",
+        },
+    ];
 
-  import Artistcard from "$lib/components/artistcard.svelte";
+    import Artistcard from "$lib/components/artistcard.svelte";
     import { imagen } from "$lib/data/imagen";
 </script>
 

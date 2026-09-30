@@ -91,13 +91,7 @@
         class="grid grid-[#grid-cols-4] grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 px-10 py-6"
     >
         {#each missolotresproyectos as producto}
-            <Productcard
-                img={producto.image}
-                name={producto.name}
-                des={producto.des}
-                price={producto.price}
-                slug={producto.slug}
-            />
+            <Productcard {producto} />
         {/each}
     </div>
 </section>
